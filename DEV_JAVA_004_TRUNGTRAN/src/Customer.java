@@ -56,7 +56,7 @@ public class Customer {
 	}
 
 	private static boolean checkName(String name) { // khong chua ky so , 2 tu : split \\st
-		if (name.matches("")) {
+		if (name.matches("[a-zA-Z\n]")) {
 			return true;
 		} else {
 			return false;
@@ -64,7 +64,7 @@ public class Customer {
 	}
 
 	private static boolean checkGender(String gender) { // kiem tra gioi tinh
-		if (gender.matches("")) {
+		if (gender.matches("Male")) {
 			return true;
 		} else {
 			return false;
